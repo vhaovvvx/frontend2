@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin:0;
+}
+th{
+    text-align: center;
+}
+ul,li,ol{
+    margin-left: 20px;
+}
