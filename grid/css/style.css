@@ -150,12 +150,13 @@
 
 .banner-text {
   letter-spacing: 4px;
-  line-height: 5;
-  font-size: 17px;
+  line-height: 6;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--while);
   text-align: center;
+  margin-bottom: -10px;
 }
 .banner-heading {
   letter-spacing: 7px;
@@ -167,7 +168,7 @@
 }
 
 .banner-italic {
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   color: var(--while);
   font-size: 48px;
   line-height: 1.25;
@@ -491,4 +492,31 @@
   left: 129.16px;
   top: 4042.198px;
   z-index: 50;
+}
+
+.Công_ty_thương_mại_hàng_đầu {
+  font-size: 14px;
+  font-family: "Averta PE";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 6;
+  text-align: left;
+  position: absolute;
+  left: 533.937px;
+  top: 305.414px;
+  z-index: 175;
+}
+
+.Chúng_tôi_thay_đổi_Cách_bạn_thực_hiện_dự_án {
+  font-size: 48px;
+  font-family: "PlayfairDisplay";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  position: absolute;
+  left: 409.937px;
+  top: 343.761px;
+  z-index: 174;
 }
