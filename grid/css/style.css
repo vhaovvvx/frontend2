@@ -464,7 +464,7 @@
     width: 1200px;
   }
   .menu-icon {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
   }
   .project-new-img {
