@@ -1,0 +1,31 @@
+.one {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  font-size: 14px;
+}
+
+.content-2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.content-swap-1 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-bottom: 20px;
+  color: white;
+}
+.content-swap-2 {
+  width: 200px;
+  height: 200px;
+  background-color: powderblue;
+  color: yellow;
+}
