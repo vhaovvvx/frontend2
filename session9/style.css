@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.nav {
+  display: flex;
+  background-color: red;
+  align-items: baseline;
+}
+
+.navbar {
+  background-color: red;
+  justify-content: space-around;
+}
+.d-flex {
+  align-items: stretch;
+}
+
+.logo-nav {
+  margin-right: 20px;
+}
+.nav-item {
+}
+
+.nav-item a {
+  margin: auto 0;
+  color: #ffffff;
+}
+.nav-item a:hover {
+  background: #ffffff;
+  color: black;
+}
+
+.nav-link {
+  margin: 0 auto;
+}
+.search {
+  background-color: #ffffff;
+}
+.form-control {
+  border: none;
+}
+
+.location {
+  margin: 0 60px;
+}
