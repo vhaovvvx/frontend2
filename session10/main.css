@@ -75,6 +75,31 @@ ul li.checked::before {
   color: white;
 }
 
+/* Style the edit button */
+.edit {
+  position: absolute;
+  right: 6%;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.edit:hover {
+  background-color: green;
+  color: white;
+}
+
+.completed {
+  position: absolute;
+  right: 3%;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.completed:hover {
+  background-color: green;
+  color: white;
+}
+
 /* Style the header */
 .header {
   background-color: #f44336;
