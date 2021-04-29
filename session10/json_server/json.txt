@@ -1,0 +1,52 @@
+Start JSON Server:
+
+json-server --watch db.json
+
+-Create -> post
+-Read -> GET
+- Update: PUT / PATCH
+- Delete: Delete
+
+import "./styles.css";
+
+function getCharacters() {
+  return fetch(
+    "https://5f5b404b044570001674ca01.mockapi.io/characters"
+  ).then((res) => res.json());
+}
+
+let charactersHTML = "";
+let selectedCharacterId = undefined;
+
+getCharacters()
+  .then((characters) => {
+    console.log(characters);
+    characters.forEach((character) => {
+      charactersHTML += `
+        <ul>
+          <li attr-char-id='${character.id}' class="character">${character.id} - ${character.name}</li>
+        </ul>
+      `;
+    });
+    
+    charactersHTML += `<div id="selected-character-view"></div>`
+
+    document.getElementById("app").innerHTML = charactersHTML;
+
+    const charElements = [...document.getElementsByClassName("character")];
+    charElements.forEach((charEl) => {
+      charEl.addEventListener("click", () => {
+        selectedCharacterId = charEl.getAttribute("attr-char-id");
+        const selectedCharacter = characters.find(char => char.id === selectedCharacterId)
+
+
+        document.getElementById('selected-character-view').innerHTML = `
+          <p>${selectedCharacter.avatar}<br>${selectedCharacter.desc}</p>
+        `
+      });
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally();
